@@ -2,8 +2,11 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { io } from 'socket.io-client';
 
-const socket = io('http://localhost:3000');
+// Replace this line
+// const socket = io('https://portfolio-3roj.onrender.com');
 
+// With this line
+const socket = io(import.meta.env.VITE_SOCKET_IO_URL);
 function App() {
   const [selectedUser, setSelectedUser] = useState(null); // Currently chatting user
   const [messages, setMessages] = useState([]); // Messages for selected user
@@ -14,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const res = await fetch('http://localhost:3000/users');
+        const res = await fetch('https://portfolio-3roj.onrender.com/users');
         const data = await res.json();
 
         // Add messages array to each user

@@ -4,8 +4,11 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 // --- Socket.IO and Firebase Initialization ---
-const socket = io('http://localhost:3000');
+// Replace this line
+// const socket = io('https://portfolio-3roj.onrender.com');
 
+// With this line
+const socket = io(import.meta.env.VITE_SOCKET_IO_URL);
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,

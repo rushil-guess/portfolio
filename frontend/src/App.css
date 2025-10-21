@@ -1,0 +1,66 @@
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Neon Text Styles */
+.neon-text {
+  color: #9b59b6;
+  text-shadow: 0 0 5px #9b59b6, 0 0 10px #9b59b6, 0 0 20px #9b59b6;
+}
+
+.neon-subtext {
+  color: #ccc;
+  text-shadow: 0 0 3px #fff;
+}
+
+.neon-highlight {
+  color: #8e44ad;
+  font-weight: bold;
+  text-shadow: 0 0 5px #8e44ad, 0 0 10px #8e44ad;
+}
+
+.neon-link {
+  color: #9b59b6 !important;
+  transition: 0.3s;
+}
+
+.neon-link:hover {
+  text-decoration: underline;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #0a0a0a;
+  padding: 80px 0;
+}
+
+/* Dark cards */
+.dark-card {
+  background-color: #111;
+  border-radius: 15px;
+  border: 1px solid #222;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+  box-shadow: 0 10px 20px rgba(155, 89, 182, 0.5);
+}
+
+/* Section titles */
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #9b59b6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Chat box */
+.chat-box {
+  border-radius: 10px;
+  padding: 10px;
+}
